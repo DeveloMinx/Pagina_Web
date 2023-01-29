@@ -1,0 +1,32 @@
+<div class="container-title">
+<p class="title">Registro</p>
+</div>
+<div class="create">
+    <a routerLink="/create" class="crear">Crear</a>
+</div> 
+
+<div class="container-tabla">
+<div class="tabla">
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Valor</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let post of Posts">
+            <td>{{post.name}}</td>
+            <td>{{post.descrip}}</td>
+            <td>{{post.value}}</td>
+            <td>
+                <button routerLink="/edit/{{post.id}}" class="btn btn-primary">Editar</button>
+                <button (click)="deleteRow(post)" class="btn btn-danger"> borrar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>

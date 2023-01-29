@@ -1,0 +1,12 @@
+<h1>Edit</h1> 
+
+<form [formGroup]="editForm" (ngSubmit)="onSubmit()" novalidate>
+   
+    <label>Nombre</label>
+    <input formControlName="name" type="text" required>
+    <label>Descripcion</label>
+    <input formControlName="descrip" type="text" required>
+    <label>Value</label>
+    <input formControlName="value" type="number" required>
+    <button  type="submit">Actualizar</button>
+</form>

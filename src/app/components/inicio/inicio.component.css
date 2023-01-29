@@ -1,0 +1,44 @@
+.header .navbar {
+    background-color: transparent !important;
+  }
+  .logo{
+    height: 50px;
+    margin-right: 30px;
+  }
+  .bot{
+    height: 200px;
+
+  }
+  .coloured{
+    background-color: rgb(68, 64, 64);
+  }
+  .btni{
+    padding: 8px 10px 8px 10px ;
+    border-radius: 10px;
+    background-color: rgb(34, 34, 34);
+    border-color: black;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5;
+  }
+  .btni:hover{
+    background-color: transparent;
+  }
+  .fas{
+    color: aliceblue;
+  }
+  .nospace li a{
+    color: rgb(92, 93, 94);
+  }
+  .nav-link{
+    color: rgb(150, 147, 147);
+    font-size: 15px;
+    transition: all 0.5s;
+} .nav-link:hover{
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ 

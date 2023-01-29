@@ -1,0 +1,12 @@
+<h1>create</h1> 
+
+<form [formGroup]="postForm" (ngSubmit)="onSubmit()" novalidate>
+   
+    <label>Nombre</label>
+    <input formControlName="name" type="text" required>
+    <label>Descripcion</label>
+    <input formControlName="descrip" type="text" required>
+    <label>Valor</label>
+    <input formControlName="value" type="number" required>
+    <button [disabled]="!postForm.valid" type="submit">Guardar</button>
+</form>
